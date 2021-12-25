@@ -17,6 +17,9 @@ target: [1,2,"Fizz",4,"Buzz","Fizz",7,8,"Fizz","Buzz",11,"Fizz",13,14,"FizzBuzz"
 input:  [1, 2, "Fizz", 4, "Buzz", "Foo", 7, 8, "Fizz"] // バイト数: 46バイト
 
 output: [1,2,"Fizz",4,"Buzz","Foo",7,8,"Fizz"] // 要素数: 9
+
+一致総数: 8要素
+前方一致: 5要素
 ```
 
 
