@@ -19,7 +19,7 @@ if (process.argv.length === 0) {
             const outputJSON = JSON.stringify(outputObj)
 
             const fullMatchLen = targetArr.filter((item, i) => item === outputArr[i]).length
-            const prefixMatchIdx = targetArr.map((item, i) => item === outputArr[i]).indexOf(false)
+            const prefixMatchIdx = targetArr.findIndex((item, i) => item !== outputArr[i])
             const prefixMatchLen = prefixMatchIdx === -1 ? targetArr.length : prefixMatchIdx
 
             console.log(`target: ${targetJSON} // 要素数: ${targetArr.length}, バイト数: ${targetJSON.length}バイト\n`)
